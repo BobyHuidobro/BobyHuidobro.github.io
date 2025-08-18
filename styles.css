@@ -1,11 +1,27 @@
 body {
-    background-color: rgb(255, 164, 32);
+    font-family: "Roboto";
+    background-color: #5c4b51;
+}
+
+h1 {
+    color: #f06060;
+}
+
+h2 {
+    color: #f3b562;
 }
 
 h4 {
+    color: #8cbeb2;
     margin-bottom: 0.5px;
 }
 
 p {
+    color: #f2ebbf;
     margin-bottom: 13px;
+    text-align: justify;
+}
+
+#photoCaption {
+    color: #f2ebbf;
 }

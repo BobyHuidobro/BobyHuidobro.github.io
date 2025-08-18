@@ -13,21 +13,29 @@
         <title>Página personal</title>
     </head>
     <body>
-        <div class="container text-center">
-            <h1>DOMINGO HUIDOBRO PÉREZ DE ARCE</h1>
+        <div class="container text-center my-4">
+            <h1 class="fw-bold">DOMINGO HUIDOBRO PÉREZ DE ARCE</h1>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="container col">
-                    <h2 class="text-center">Sobre mi</h2>
-                    <img
-                        src="Foto.jpeg"
-                        alt="Foto de mi"
-                        class="img-fluid float-end me-3 rounded"
-                        style="max-width: 250px"
-                    />
+            <div class="row g-4">
+                <div class="container col-md-7">
+                    <h2 class="text-center mb-4">Sobre mi</h2>
+                    <figure class="float-end me-3 ms-3">
+                        <img
+                            src="Foto.jpeg"
+                            alt="Foto de mi"
+                            class="img-fluid float-end me-3 ms-3 rounded"
+                            style="max-width: 250px"
+                        />
+                        <figcaption
+                            id="photoCaption"
+                            class="text-center fst-italic"
+                        >
+                            Foto de Domingo Huidobro
+                        </figcaption>
+                    </figure>
                     <h4>Información importante</h4>
-                    <p>
+                    <p class="text-justify">
                         Mi nombre es Domingo Huidobro Pérez de Arce. Tengo 20
                         años a día de hoy, 16 de agosto de 2025 y soy estudiante
                         de Ingeniería Civil en Ciencias de la Computación en la
@@ -40,7 +48,7 @@
                         parte de mi infancia. A los 6 años, volvimos a Santiago,
                         lugar donde he vivido desde entonces.
                     </p>
-                    <p">
+                    <p>
                         El 2022 ingresé a la Universidad de los Andes en
                         Ingeriería Civil plan común. Donde después de dos años,
                         tuve que elegir especialidad, sindo lo que estudio
@@ -64,11 +72,11 @@
                 </div>
 
                 <div class="container col">
-                    <div class="container row text-end">
-                        <p class="mb-0">
-                            Ingeniero Civil en Ciencias de la Computación
+                    <div class="container row">
+                        <p class="text-end">
+                            Ingeniero Civil en Ciencias de la Computación <br />
+                            Universidad de los Andes, Santiago, Chile
                         </p>
-                        <p>Universidad de los Andes, Santiago, Chile</p>
                     </div>
 
                     <div class="container row text-center">
@@ -121,6 +129,18 @@
                         </table>
                     </div>
 
+                    <div class="container row">
+                        <input
+                            type="text"
+                            placeholder="Edita la descripción de la foto"
+                            class="form-control mb-2"
+                            id="captionInput"
+                        />
+                        <button class="btn btn-primary" onclick="editCaption()">
+                            Cambiar descripción
+                        </button>
+                    </div>
+
                     <div class="container row text-center">
                         <div class="container col">
                             <p>Referencia a mi repositorio de GitHub</p>
@@ -134,5 +154,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
