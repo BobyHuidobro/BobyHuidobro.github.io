@@ -1,6 +1,7 @@
 body {
     font-family: "Roboto";
     background-color: #5c4b51;
+    color: #f2ebbf;
 }
 
 h1 {
@@ -17,11 +18,6 @@ h4 {
 }
 
 p {
-    color: #f2ebbf;
     margin-bottom: 13px;
     text-align: justify;
-}
-
-#photoCaption {
-    color: #f2ebbf;
 }
